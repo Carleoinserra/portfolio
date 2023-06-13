@@ -9,13 +9,33 @@
     <h1>Benvenuto sul mio sito web git!</h1>
     <p>Questo è un esempio di sito web creato utilizzando GitHub Pages.</p>
 
-    <script>
-        // Chiamata alla funzione di saluto
-        sayHello("Marco");
+   <script>
+        // Funzione per visualizzare un saluto personalizzato
+        function sayHello(name) {
+            var greeting = "Ciao, " + name + "! Benvenuto sul mio sito web!";
+            alert(greeting);
+        }
 
-        // Chiamata alla funzione di calcolo
-        var result = addNumbers(5, 3);
-        console.log("Risultato: " + result);
-    </script>
+        // Funzione per visualizzare un fatto casuale
+        function showRandomFact() {
+            var facts = [
+                "Le formiche possono sollevare oggetti fino a 50 volte il loro peso.",
+                "Le banane sono tecnicamente bacche, mentre i fragole non lo sono.",
+                "I pinguini hanno solo un partner per tutta la vita.",
+                "Il miele non scade mai, può durare per millenni.",
+                "Le giraffe hanno la stessa quantità di vertebre nel collo degli esseri umani."
+            ];
+
+            var randomIndex = Math.floor(Math.random() * facts.length);
+            var fact = facts[randomIndex];
+            console.log("Fatto casuale: " + fact);
+            alert("Fatto casuale: " + fact);
+        }
+       sayHello("Marco");
+
+        // Chiamata alla funzione di visualizzazione di un fatto casuale
+        showRandomFact();
+    </script>   
 </body>
 </html>
+
