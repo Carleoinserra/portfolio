@@ -3,14 +3,28 @@
 <head>
     <title>About</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .profile-img {
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>About Me</h1>
-        <img src="foto.jpeg" alt="My Photo" class="img-fluid">
-        <p>Sviluppatore e insegnante di materie It, laureato a Pisa in informatica umanistica, cerco 
-        di unire il mio amore per la tecnologia con la passione per l'insegnamento
-        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="foto.jpeg" alt="My Photo" class="img-fluid profile-img">
+            </div>
+            <div class="col-md-6">
+                <p>Sviluppatore e insegnante di materie IT, laureato a Pisa in informatica umanistica, cerco di unire il mio amore per la tecnologia con la passione per l'insegnamento.</p>
+                <blockquote class="blockquote">
+                    <p class="mb-0">"La tecnologia è solo uno strumento. È l'insegnante che fa la differenza."</p>
+                    <footer class="blockquote-footer">John C. Maxwell</footer>
+                </blockquote>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
